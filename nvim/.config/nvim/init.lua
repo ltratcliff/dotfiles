@@ -887,6 +887,7 @@ require('lazy').setup({
     config = function()
       ---@diagnostic disable-next-line: missing-fields
       require('tokyonight').setup {
+        transparent = true,
         styles = {
           comments = { italic = false }, -- Disable italics in comments
         },
@@ -942,7 +943,7 @@ require('lazy').setup({
   { -- Highlight, edit, and navigate code
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
-    main = 'nvim-treesitter.configs', -- Sets main module to use for opts
+    main = 'nvim-treesitter.config', -- Sets main module to use for opts
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
       ensure_installed = {
@@ -983,17 +984,8 @@ require('lazy').setup({
   },
   {
     'vuki656/package-info.nvim',
-    opts = {
-      colors = {
-        -- outdated = '#FFCC80',
-        outdated = '#EF9A9A',
-        up_to_date = '#A5D6A7',
-      },
-    },
-    config = function(_, opts)
-      require('package-info').setup(opts)
-      vim.cmd([[highlight PackageInfoUpToDateVersion guifg=]] .. opts.colors.up_to_date)
-      vim.cmd([[highlight PackageInfoOutdatedVersion guifg=]] .. opts.colors.outdated)
+    config = function(_)
+      require('package-info').setup()
     end,
   },
 
