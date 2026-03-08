@@ -1,0 +1,11 @@
+font_family JetBrainsMono Nerd Font
+bold_font auto
+italic_font auto
+bold_italic_font auto
+font_size 12.0
+disable_ligatures never
+
+# Use specific Nerd Font symbols
+symbol_map U+E000-U+E00D,U+E010-U+E017,U+E020-U+E029,U+E030-U+E03E,U+E040-U+E044,U+E050-U+E059,U+E060-U+E067,U+E070-U+E075,U+E080-U+E085,U+E090-U+E099,U+E0A0-U+E0A3,U+E0B0-U+E0B3,U+E0B4-U+E0C8,U+E0CA,U+E0CC-U+E0D4,U+E200-U+E2A9,U+E300-U+E3E3,U+E5FA-U+E6B1,U+E700-U+E7C5,U+F000-U+F2E0,U+F300-U+F372,U+F400-U+F532,U+F0001-U+F1AF0 JetBrainsMono Nerd Font
+
+env LANG=en_US.UTF-8
