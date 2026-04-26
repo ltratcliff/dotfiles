@@ -83,6 +83,11 @@ I hope you enjoy your Neovim journey,
 
 P.S. You can delete this when you're done too. It's your config now! :)
 --]]
+--
+vim.opt.tabstop = 8 -- A TAB character looks like 8 spaces
+vim.opt.softtabstop = 4 -- Number of spaces inserted when hitting TAB
+vim.opt.shiftwidth = 4 -- Number of spaces for auto-indentation (e.g., '>>')
+vim.opt.expandtab = true -- Convert tabs to spaces
 
 -- Set <space> as the leader key
 -- See `:help mapleader`
